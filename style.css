@@ -1,0 +1,53 @@
+html {
+  background-color: grey;
+  overflow: hidden;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+#character {
+  width: 10vmin;
+  height: 10vmin;
+  position: fixed;
+  background-color: #F8C574;
+  border-radius: 50%;
+  left: calc(50vw - 5vmin);
+  top: calc(50vh - 5vmin);
+  z-index: 2;
+}
+
+#gamearea {
+  width: 300vmax;
+  height: 300vmax;
+  position: absolute;
+  left: calc(50vw - 5vmin);
+  top: calc(50vh - 5vmin);
+  background-color: #80AF49;
+  z-index: -1;
+}
+
+#scrollext {
+  position: absolute;
+  left: calc(50vw - 5vmin + 300vmax + 50vw - 5vmin);
+  top: calc(50vh - 5vmin + 300vmax + 50vh - 5vmin);
+  width: 1vmin;
+  height: 1vmin;
+}
+
+#gun {
+  position: fixed;
+  left: 50vw;
+  top: calc(50vh - 1vmin);
+  width: 20vmin;
+  height: 2vmin;
+  background-color: brown;
+  transform-origin: left;
+  z-index: 1;
+}
